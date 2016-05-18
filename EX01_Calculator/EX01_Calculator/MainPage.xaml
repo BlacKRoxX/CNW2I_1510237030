@@ -1,0 +1,236 @@
+﻿<Page
+    x:Class="EX01_Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EX01_Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="183*"/>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="91.333"/>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="92*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="TextBlockShowResult"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="4"
+                   FontSize="40"/>
+
+        <Button x:Name="ButtonZero"
+                Grid.Column="1"
+                Grid.Row="5"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="0"
+                FontSize="40"
+                Click="ButtonZero_OnClick"/>
+
+        <Button x:Name="ButtonOne"
+                Grid.Column="0"
+                Grid.Row="4"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="1"
+                FontSize="40"
+                Click="ButtonOne_OnClick"/>
+
+        <Button x:Name="ButtonTwo"
+                Grid.Column="1"
+                Grid.Row="4"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="2"
+                FontSize="40"
+                Click="ButtonTwo_OnClick"/>
+
+        <Button x:Name="ButtonThree"
+        	Grid.Column="2"
+        	Grid.Row="4"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="3"
+        	FontSize="40"
+        	Click="ButtonThree_OnClick"/>
+
+        <Button x:Name="ButtonFour"
+        	Grid.Column="0"
+        	Grid.Row="3"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="4"
+        	FontSize="40"
+        	Click="ButtonFour_OnClick"/>
+
+        <Button x:Name="ButtonFive"
+        	Grid.Column="1"
+        	Grid.Row="3"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="5"
+        	FontSize="40"
+        	Click="ButtonFive_OnClick"/>
+
+        <Button x:Name="ButtonSix"
+        	Grid.Column="2"
+        	Grid.Row="3"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="6"
+        	FontSize="40"
+        	Click="ButtonSix_OnClick"/>
+
+        <Button x:Name="ButtonSeven"
+        	Grid.Column="0"
+        	Grid.Row="2"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="7"
+        	FontSize="40"
+        	Click="ButtonSeven_OnClick"/>
+
+        <Button x:Name="ButtonEight"
+                Grid.Column="1"
+                Grid.Row="2"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="8"
+                FontSize="40"
+                Click="ButtonEight_OnClick"/>
+
+        <Button x:Name="ButtonNine"
+                Grid.Column="2"
+                Grid.Row="2"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="9"
+                FontSize="40"
+                Click="ButtonNine_OnClick"/>
+
+        <Button x:Name="ButtonComma"
+                Grid.Column="0"
+                Grid.Row="5"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content=","
+                FontSize="40"
+                Click="ButtonComma_OnClick"/>
+
+        <Button x:Name="ButtonPlus"
+        	Grid.Column="3"
+        	Grid.Row="5"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="+"
+        	FontSize="40"
+        	Click="ButtonPlus_OnClick"/>
+
+        <Button x:Name="ButtonMinus"
+        	Grid.Column="3"
+        	Grid.Row="4"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="-"
+        	FontSize="40"
+        	Click="ButtonMinus_OnClick"/>
+
+        <Button x:Name="ButtonMultiply"
+        	Grid.Column="3"
+        	Grid.Row="3"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="x"
+        	FontSize="40"
+        	Click="ButtonMultiply_OnClick"/>
+
+        <Button x:Name="ButtonDivide"
+                Grid.Column="3"
+                Grid.Row="2"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="/"
+                FontSize="40"
+                Click="ButtonDivide_OnClick"/>
+
+        <Button x:Name="ButtonEquals"
+        	Grid.Column="2"
+        	Grid.Row="5"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="="
+        	FontSize="40"
+        	Click="ButtonEquals_OnClick"/>
+
+        <Button x:Name="ButtonMemoryStore"
+                Grid.Column="0"
+                Grid.Row="1"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="MS"
+                FontSize="40"
+                Click="ButtonMemoryStore_OnClick"/>
+
+        <Button x:Name="ButtonMemoryRecall"
+                Grid.Column="1"
+                Grid.Row="1"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="MR"
+                FontSize="40"
+                Click="ButtonMemoryRecall_OnClick"/>
+
+        <Button x:Name="ButtonMemoryClear"
+                Grid.Column="2"
+                Grid.Row="1"
+                Background="LightGray" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Content="MC"
+                FontSize="40"
+                Click="ButtonMemoryClear_OnClick"/>
+
+        <Button x:Name="ButtonClearCalc"
+        	Grid.Column="3"
+        	Grid.Row="1"
+        	Background="LightGray" 
+        	HorizontalAlignment="Stretch"
+        	VerticalAlignment="Stretch"
+        	Content="C"
+        	FontSize="40"
+        	Click="ButtonClearCalc_OnClick"/>
+
+    </Grid>
+</Page>
+
+
+
