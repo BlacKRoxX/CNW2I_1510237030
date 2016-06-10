@@ -1,0 +1,6 @@
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\bin\Debug\CSharpPro.exe.config
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\bin\Debug\CSharpPro.exe
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\bin\Debug\CSharpPro.pdb
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\obj\Debug\CSharpPro.csprojResolveAssemblyReference.cache
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\obj\Debug\CSharpPro.exe
+D:\Local Workspace\Visual Studio\FH_Hagenberg\CSharpPro\CSharpPro\obj\Debug\CSharpPro.pdb
